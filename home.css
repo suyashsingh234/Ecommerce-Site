@@ -22,9 +22,15 @@ body{
 	top:5%;
 	height: 60%;
 	font-size: 2vw;
+	color:white;
+	padding:5px;
 	background-color: #12cedb;
 	display: inline-block;
 	border-radius: 10% 10% 10% 10%;
+	box-shadow: 2px 2px 2px 2px black;
+}
+.btn:hover{
+	background-color: #0390a6;
 }
 .slider
 {
@@ -61,5 +67,38 @@ body{
 	}
 	75%{
 		left:-300%;
+	}
+}
+.items
+{
+	position: absolute;
+	top:75%;
+	width:100%;
+	display: block;
+}
+.ItemType{
+	position: relative;
+	left:15%;
+	float:left;
+	width: 35%;
+	height:30%;
+	color:white;
+	margin: 5px;
+	background-color: #6d2dad;
+	display: block;
+}
+.ItemType:hover{
+	background-color: #f619fa;
+}
+.ItemType p{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100%;
+	font-size: 5vw;
+}
+@media only screen and (max-width:960px){
+	.ItemType{
+		left:32.5%;
+		float: none;
 	}
 }
