@@ -12,14 +12,32 @@
 	position: absolute;
 	top:5%;
 	height: 60%;
+	width:30%;
+	text-align: center;
 	font-size: 2vw;
 	color:white;
 	padding:5px;
 	background-color: #12cedb;
 	display: inline-block;
-	border-radius: 10% 10% 10% 10%;
 	box-shadow: 2px 2px 2px 2px black;
 }
 .btn:hover{
+	background-color: #0390a6;
+}
+#goHome{
+	position: absolute;
+	right:0%;
+	top:5%;
+	width:20%;
+	text-align: center;
+	height: 60%;
+	font-size: 2vw;
+	color:white;
+	padding:5px;
+	background-color: #12cedb;
+	display: inline-block;
+	box-shadow: 2px 2px 2px 2px black;
+}
+#goHome:hover{
 	background-color: #0390a6;
 }

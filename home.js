@@ -1,6 +1,9 @@
 document.getElementById("ls").addEventListener("click",function(){
 	window.location="registration.html";
 });
+document.getElementById("goHome").addEventListener("click",function(){
+	window.location="home.html";
+});
 document.getElementById('grocery').addEventListener('click',function(){
 	window.location="grocery.html";
 });
