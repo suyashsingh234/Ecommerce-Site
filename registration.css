@@ -1,0 +1,44 @@
+@import "backgroundColor.css";
+html,body{
+	height:100%;
+	width:100%;
+}
+.container{
+	position: absolute;
+	top:5%;
+	left:30%;
+	width:40%;
+	height:70%;
+	background-color: #f5ae56;
+}
+#showLogin, #showSignup{
+	position: relative;
+	float:left;
+	display: inline-block;
+	width:50%;
+	height:10%;
+	text-align: center;
+	border-bottom: 1px solid grey;
+	font-size: 3vw;
+}
+#showLogin{
+	box-shadow: 2px 2px 2px 2px black;
+}
+#login,#signup{
+	position: relative;
+	top:15%;
+	padding:5px;
+}
+#signup{
+	display: none;
+}
+form{
+	position: relative;
+	left:2%;
+}
+form input{
+	font-size: 2vw;
+}
+.label{
+	font-size: 2vw;
+}
