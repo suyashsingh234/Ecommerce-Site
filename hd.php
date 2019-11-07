@@ -14,41 +14,21 @@
 				Home
 			</div>
 		</div>
-
-		<div class="items">
-			<div class="ItemType">
-				Curtains
-				<div>
-					<button class="minus">-</button>
-					<div class="count">0</div>
-					<button class="plus">+</button>
+		<?php
+			$con=mysqli_connect("localhost","root","","ecommerce") or die("failed");
+			$result=mysqli_query($con,"select * from items where type='decor'");
+			echo "<div class='items'>";
+			while($row=mysqli_fetch_assoc($result))
+			{
+				echo "<div class='ItemType'>".$row['name']."<div>
+					<button class='minus'>-</button>
+					<div id=".$row['id']." class='count'>0</div>
+					<button class='plus'>+</button>
 				</div>
-			</div>
-			<div class="ItemType">
-				Sofa Covers
-				<div>
-					<button class="minus">-</button>
-					<div class="count">0</div>
-					<button class="plus">+</button>
-				</div>
-			</div>
-			<div class="ItemType">
-				Bed Sheets
-				<div>
-					<button class="minus">-</button>
-					<div class="count">0</div>
-					<button class="plus">+</button>
-				</div>
-			</div>
-			<div class="ItemType">
-				Door Mats
-				<div>
-					<button class="minus">-</button>
-					<div class="count">0</div>
-					<button class="plus">+</button>
-				</div>
-			</div>
-		</div>
+			</div>"."<br>";
+			}
+			echo "</div>";
+		?>
 		<button id="addcart" class="addtocart">Add to cart</button>
 		<script src="item.js"></script>
 	</body>
