@@ -1,0 +1,20 @@
+body{
+	animation: change 30s infinite;
+}
+@keyframes change{
+	0%{
+		background:grey;
+	}
+	25%{
+		background: white;
+	}
+	50%{
+		background: green;
+	}
+	75%{
+		background: blue;
+	}
+	100%{
+		background: tomato;
+	}
+}

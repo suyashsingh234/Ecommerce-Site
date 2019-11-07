@@ -1,12 +1,15 @@
 <html>
 	<head>
-		<link href="grocery.css" rel="stylesheet"/>
+		<link href="women.css" rel="stylesheet"/>
 	</head>
 	<body>
 		<div class="nav">
 			<div id="ls" class="btn">
 				Log in/Sign up
 			</div>
+			<div id="title" >
+					JIIT SHOP
+				</div>
 			<div id="goHome">
 				Home
 			</div>
@@ -14,7 +17,7 @@
 
 		<div class="items">
 			<div class="ItemType">
-				Banana
+				Salwar Suit
 				<div>
 					<button class="minus">-</button>
 					<div class="count">0</div>
@@ -22,7 +25,7 @@
 				</div>
 			</div>
 			<div class="ItemType">
-				Milk
+				Lehnga
 				<div>
 					<button class="minus">-</button>
 					<div class="count">0</div>
@@ -30,7 +33,7 @@
 				</div>
 			</div>
 			<div class="ItemType">
-				Spinach
+				Saree
 				<div>
 					<button class="minus">-</button>
 					<div class="count">0</div>
@@ -38,7 +41,7 @@
 				</div>
 			</div>
 			<div class="ItemType">
-				Pineapple
+				Sandals
 				<div>
 					<button class="minus">-</button>
 					<div class="count">0</div>
@@ -47,6 +50,6 @@
 			</div>
 		</div>
 
-		<script src="grocery.js"></script>
+		<script src="women.js"></script>
 	</body>
 </html>

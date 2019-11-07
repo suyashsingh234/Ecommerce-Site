@@ -1,0 +1,57 @@
+@import "nav.css";
+@import "bgc.css";
+html,body{
+	width:100%;
+	height:100%;
+	overflow-x:hidden;
+}
+
+.items{
+	position: absolute;
+	top:10%;
+	width:100%;
+	height:100%;
+	display: block;
+}
+.ItemType{
+	position: relative;
+	left:15%;
+	width:35%;
+	height:20%;
+	color:green;
+	font-size: 5vw;
+	text-align: center;
+	background-color: black;
+	float:left;
+	margin:5px;
+	display: inline-block;
+}
+.ItemType div{
+	position: absolute;
+	left:0%;
+	bottom: 0%;
+	width:100%;
+	height:15%;
+	background-color: yellow;
+}
+.ItemType div button{
+	position: relative;
+	float: left;
+	height:100%;
+	width:33%;
+	display: inline-block;
+}
+.ItemType div .count{
+	position: relative;
+	float: left;
+	font-size: 20px;
+	height:100%;
+	width:34%;
+	display: inline-block;
+}
+@media only screen and (max-width:960px){
+	.ItemType{
+		float:none;
+		width:70%;
+	}
+}

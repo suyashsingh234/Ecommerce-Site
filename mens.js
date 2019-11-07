@@ -2,7 +2,7 @@ document.getElementById("ls").addEventListener("click",function(){
 	window.location="registration.html";
 });
 document.getElementById("goHome").addEventListener("click",function(){
-	window.location="home.html";
+	window.location="hpage.html";
 });
 
 var minbtn=document.getElementsByClassName('minus');
@@ -26,3 +26,15 @@ for(let i=0;i<plusbtn.length;i++){
 		count.innerHTML=parseInt(count.innerHTML)+1;
 	});
 }
+
+var cnt=document.getElementsByClassName('count');
+document.getElementById('addcart').addEventListener('click',()=>{
+	var p="?";
+	for(let i=0;i<cnt.length;i++)
+	{
+		if(i>0)
+			p+="&";
+		p+="id"+cnt[i].id+"="+cnt[i].innerHTML;
+	}
+	window.location="add.php"+p;
+})
