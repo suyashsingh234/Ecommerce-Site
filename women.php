@@ -7,9 +7,9 @@
 			<div id="ls" class="btn">
 				Log in/Sign up
 			</div>
-			<div id="title" >
-					JIIT SHOP
-				</div>
+			<div id="cart" >
+				Cart
+			</div>
 			<div id="goHome">
 				Home
 			</div>
@@ -40,6 +40,7 @@
 			</div>"."<br>";
 			}
 			echo "</div>";
+			mysqli_close($con);
 		?>
 		<button id="addcart" class="addtocart">Add to cart</button>
 		<script src="item.js"></script>

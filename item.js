@@ -4,6 +4,9 @@ document.getElementById("ls").addEventListener("click",function(){
 document.getElementById("goHome").addEventListener("click",function(){
 	window.location="hpage.html";
 });
+document.getElementById("cart").addEventListener("click",function(){
+	window.location="cart.php";
+});
 
 var minbtn=document.getElementsByClassName('minus');
 
@@ -28,7 +31,7 @@ for(let i=0;i<plusbtn.length;i++){
 }
 
 var cnt=document.getElementsByClassName('count');
-document.getElementById('addcart').addEventListener('click',()=>{
+document.getElementById('addcart').addEventListener('click',function(){
 	var p="?";
 	for(let i=0;i<cnt.length;i++)
 	{

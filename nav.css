@@ -41,7 +41,7 @@
 #goHome:hover{
 	background-color: #0390a6;
 }
-#title{
+#cart{
 	position: absolute;
 	right: 0%;
 	left: 31%;
@@ -56,6 +56,6 @@
 	display: inline-block;
 	box-shadow: 2px 2px 2px 2px black;
 }
-#title :hover{
-	background-color: #c0c0c0
+#cart:hover{
+	background-color:#0390a6;
 }

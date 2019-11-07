@@ -12,6 +12,7 @@
 					echo "<td>"."<a href='delete.php?id=".$row['id']."'>"."DELETE"."</td>";
 					echo "</tr>";
 				}
+				mysqli_close($con);
 			?>
 		</table>
 	</body>
