@@ -9,7 +9,7 @@
 					mysqli_query($con,"insert into cart values ($id,$value)");
 				}
 			}
-			//header("Location:cart.php");
+		  header("Location:cart.php");
 		?>
 	</body>
 </html>

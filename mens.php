@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<link href="mens.css" rel="stylesheet"/>
+		<link href="item.css" rel="stylesheet"/>
 	</head>
 	<body>
 		<div class="nav">
@@ -30,6 +30,6 @@
 			echo "</div>";
 		?>
 		<button id="addcart" class="addtocart">Add to cart</button>
-		<script src="mens.js"></script>
+		<script src="item.js"></script>
 	</body>
 </html>

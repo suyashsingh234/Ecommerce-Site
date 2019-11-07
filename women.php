@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<link href="women.css" rel="stylesheet"/>
+		<link href="item.css" rel="stylesheet"/>
 	</head>
 	<body>
 		<div class="nav">
@@ -49,7 +49,7 @@
 				</div>
 			</div>
 		</div>
-
-		<script src="women.js"></script>
+		<button id="addcart" class="addtocart">Add to cart</button>
+		<script src="item.js"></script>
 	</body>
 </html>

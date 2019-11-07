@@ -55,3 +55,11 @@ html,body{
 		width:70%;
 	}
 }
+.addtocart{
+	position: absolute;
+	bottom: 10;
+	right: 0;
+	width: 10%;
+	height: 10%;
+	border-radius: 50%;
+}
