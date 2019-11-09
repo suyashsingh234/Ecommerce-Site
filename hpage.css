@@ -9,10 +9,9 @@ html,body
 .slider
 {
 	position: absolute;
-	width:70%;
+	width:100%;
 	height:50%;
-	left:15%;
-	top:10%;
+	top:8%;
 	overflow: hidden;
 }
 .slider div
@@ -46,11 +45,11 @@ html,body
 .items
 {
 	position: absolute;
-	top:75%;
+	top:60%;
 	width:100%;
 	display: block;
 }
-.ItemType{
+.items .ItemType{
 	position: relative;
 	left:15%;
 	float:left;
@@ -61,18 +60,26 @@ html,body
 	background-color: #6d2dad;
 	display: block;
 }
-.ItemType:hover{
+.items .ItemType:hover{
 	background-color: #f619fa;
 }
-.ItemType p{
+.items .ItemType p{
 	text-align: center;
 	vertical-align: middle;
 	line-height: 100%;
 	font-size: 2vw;
 }
 @media only screen and (max-width:960px){
-	.ItemType{
+	.items .ItemType{
 		left:32.5%;
 		float: none;
+		height:75%;
+		font-size: 10vw;
+	}
+	.items .ItemType p{
+		text-align: center;
+		vertical-align: middle;
+		line-height: 100%;
+		font-size: 5vw;
 	}
 }

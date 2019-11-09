@@ -1,5 +1,5 @@
 
-@import "backgroundColor.css";
+@import "bgc.css";
 html,body{
 	width:100%;
 	height:100%;
@@ -25,34 +25,56 @@ html,body{
 	float:left;
 	margin:15px;
 	display: inline-block;
+	border-radius: 10px;
 }
-.ItemType div{
+.ItemType div :not(.count){
+	position: absolute;
+	display: block;
+	bottom: 0;
+	width:100%;
+	height: 20%;
+}
+
+.ItemType div button{
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.ItemType div .plus{
+	position: absolute;
+	right:0%;
+	width:10%;
+	display: inline-block;
+}
+.ItemType div .minus{
 	position: absolute;
 	left:0%;
-	bottom: 0%;
-	width:100%;
-	height:15%;
-	background-color: yellow;
-}
-.ItemType div button{
-	position: relative;
-	float: left;
-	height:100%;
-	width:33%;
+	width:10%;
 	display: inline-block;
+
 }
 .ItemType div .count{
-	position: relative;
-	float: left;
-	font-size: 20px;
-	height:100%;
-	width:34%;
+	position: absolute;
+	bottom: 0;
+	left:25%;
+	width:50%;
 	display: inline-block;
+	background-color: #ffffff;
+	border-radius: 5px;
 }
+
+.ItemType div .plus, .ItemType div .minus, .ItemType div .count{
+		font-size: 2vw;
+}
+
 @media only screen and (max-width:960px){
 	.ItemType{
 		float:none;
 		width:70%;
+		font-size: 7vw;
+	}
+	.ItemType div .plus, .ItemType div .minus, .ItemType div .count{
+			font-size: 3vw;
 	}
 }
 .addtocart{
