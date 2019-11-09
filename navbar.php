@@ -3,7 +3,7 @@
 <body>
 	<?php
 	session_start();
-	if($_SESSION['username'])
+	if(isset($_SESSION['username']))
 	{
 		?>
 		<div id="nav">
@@ -41,6 +41,6 @@
 		}
 	?>
 
-	
+
 </body>
 </html>

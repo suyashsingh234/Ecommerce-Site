@@ -1,18 +1,14 @@
 <html>
-	<link href="nav.css" rel="stylesheet">
+	<head>
+		<link href="cart.css" rel="stylesheet">
+	</head>
 	<body>
-		<div class="nav">
-			<div id="ls" class="btn">
-				Log in/Sign up
-			</div>
-			<div id="cart">
-				Cart
-			</div>
-			<div id="goHome">
-				Home
-			</div>
-		</div>
-		<table width="100%" border="2" style="font-size:2vw; text-align:center;">
+		<?php
+		include "navbar.php";
+		if(isset($_SESSION['username']))
+		{
+		?>
+		<table>
 			<?php
 				$con=mysqli_connect("localhost","root","","ecommerce") or die("failed");
 				$query=mysqli_query($con,"select cart.id, name, quantity from cart, items where cart.id=items.id");
@@ -27,6 +23,8 @@
 				mysqli_close($con);
 			?>
 		</table>
-		<script src="item.js"></script>
+	<?php }else{
+		header("Location:registration.php");
+	}?>
 	</body>
 </html>

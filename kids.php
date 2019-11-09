@@ -23,6 +23,6 @@
 			mysqli_close($con);
 		?>
 		<button id="addcart" class="addtocart">Add to cart</button>
-		<script src="hpage.js"></script>
+		<script src="item.js"></script>
 	</body>
 </html>
