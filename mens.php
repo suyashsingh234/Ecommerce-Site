@@ -3,17 +3,9 @@
 		<link href="item.css" rel="stylesheet"/>
 	</head>
 	<body>
-		<div class="nav">
-			<div id="ls" class="btn">
-				Log in/Sign up
-			</div>
-			<div id="cart" >
-				Cart
-			</div>
-			<div id="goHome">
-				Home
-			</div>
-		</div>
+		<?php
+			include "navbar.php";
+		?>
 		<?php
 			$con=mysqli_connect("localhost","root","","ecommerce") or die("failed");
 			$result=mysqli_query($con,"select * from items where type='men'");

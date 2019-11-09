@@ -6,17 +6,9 @@
 
 	</head>
 	<body>
-			<div class="nav">
-				<div id="ls" class="btn">
-					Log in/Sign up
-				</div>
-				<div id="cart">
-					Cart
-				</div>
-				<div id="goHome">
-					Home
-				</div>
-			</div>
+			<?php
+				include "navbar.php";
+			?>
 			<div class="slider">
 				<div>
 					<img src="images/mens.jpg"/>

@@ -1,12 +1,3 @@
-document.getElementById("ls").addEventListener("click",function(){
-	window.location="registration.html";
-});
-document.getElementById("goHome").addEventListener("click",function(){
-	window.location="hpage.html";
-});
-document.getElementById("cart").addEventListener("click",function(){
-	window.location="cart.php";
-});
 document.getElementById("Mens wear").addEventListener('click',function(){
 	window.location="mens.php";
 });

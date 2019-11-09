@@ -1,0 +1,9 @@
+document.getElementById("title").addEventListener("click",function(){
+	window.location="hpage.php";
+});
+document.getElementById("cart").addEventListener("click",function(){
+	window.location="cart.php";
+});
+document.getElementById('logout').addEventListener("click",function(){
+	window.location="logout.php";
+})

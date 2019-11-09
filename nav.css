@@ -1,61 +1,43 @@
-.nav
-{
-	width:100%;
-	height:8%;
-	position: absolute;
-	left:0%;
-	top:0%;
-	background-color: #ffffff;
+
+#nav{
+		width:100%;
+		height:8%;
+		position: absolute;
+		left:0%;
+		top:0%;
+		background-color: black;
+		color:#ffffff;
 }
-.btn
-{
-	position: absolute;
-	top:5%;
-	height: 60%;
-	width:30%;
-	text-align: center;
-	font-size: 2vw;
-	color:white;
-	padding:5px;
-	background-color: #12cedb;
+#nav div{
 	display: inline-block;
-	box-shadow: 2px 2px 2px 2px black;
+	height:100%;
+	font-size: 3vw;
 }
-.btn:hover{
-	background-color: #0390a6;
+#nav #title{
+	position: absolute;
+	left: 2%;
+	width:20%;
 }
-#goHome{
+#nav #title:hover, #nav #login:hover,#nav #cart:hover, #nav #logout:hover{
+	background-color: #6df7f5;
+}
+#nav #search{
+	position: absolute;
+	left:25%;
+	width:50%;
+	height: 70%;
+}
+#nav #search #inpsearch{
+	width:100%;
+	height: 100%;
+	font-size:3vw;
+}
+#nav #cart{
+	position: absolute;
+	right:13%;
+}
+#nav #login, #nav #logout{
 	position: absolute;
 	right:0%;
-	top:5%;
-	width:20%;
-	text-align: center;
-	height: 60%;
-	font-size: 2vw;
-	color:white;
-	padding:5px;
-	background-color: #12cedb;
-	display: inline-block;
-	box-shadow: 2px 2px 2px 2px black;
-}
-#goHome:hover{
-	background-color: #0390a6;
-}
-#cart{
-	position: absolute;
-	right: 0%;
-	left: 31%;
-	top: 5%;
-	width: 50%;
-	text-align: center;
-	height: 60%;
-	font-size: 2vw;
-	color: #ffffff;
-	padding: 5px;
-	background-color: #12cedb;
-	display: inline-block;
-	box-shadow: 2px 2px 2px 2px black;
-}
-#cart:hover{
-	background-color:#0390a6;
+	width:10%;
 }
