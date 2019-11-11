@@ -16,7 +16,7 @@
 			  header("Location:cart.php");
 			}
 			else{
-				header("Location:hpage.php");
+				header("Location:registration.php");
 			}
 		?>
 	</body>

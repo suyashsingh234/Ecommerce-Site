@@ -1,87 +1,98 @@
-
-@import "bgc.css";
-html,body{
-	width:100%;
-	height:100%;
-	overflow-x:hidden;
-}
-
 .items{
 	position: absolute;
-	top:10%;
-	width:100%;
-	height:100%;
+	top:12%;
+	width: 100%;
 	display: block;
 }
-.ItemType{
+.items .item{
 	position: relative;
-	left:15%;
-	width:35%;
-	height:20%;
-	color:green;
-	font-size: 5vw;
-	text-align: center;
-	background-color: black;
-	float:left;
-	margin:15px;
-	display: inline-block;
-	border-radius: 10px;
-}
-.ItemType div :not(.count){
-	position: absolute;
 	display: block;
+	width: 100%;
+	height:25vw;
+	font-size: 5vw;
+	margin-bottom: 20px;
+	border-bottom: 2px black solid;
+	text-transform: capitalize;
+}
+.item .left{
+	position: relative;
+	left:0%;
+	width:50%;
+	height: 100%;
+}
+.item .left img{
+	position: relative;
+	left:0%;
+	max-width: 100%;
+	max-height: 100%;
+}
+.item .right{
+	position: absolute;
+	left:50%;
+	top:0%;
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+}
+.items .item .right .bottom{
+	position: absolute;
 	bottom: 0;
-	width:100%;
+	display: inline-block;
+	font-size: 2vw;
+	width: 100%;
 	height: 20%;
 }
-
-.ItemType div button{
-	background-color: #ffffff;
+.minus,.plus{
 	border-radius: 50%;
+	background: transparent;
 }
-
-.ItemType div .plus{
+.plus{
 	position: absolute;
-	right:0%;
-	width:10%;
+	right: 5%;
+	top: 0%;
+}
+.count{
+	position: absolute;
+	left: 40%;
+	top: 0%;
+	width: 20%;
+	border: 1px solid black;
+	border-radius: 2px;
+	text-align: center;
+}
+.minus{
+	position: absolute;
+	left: 2%;
+	top: 0%;
+}
+.minus,.plus,.count{
 	display: inline-block;
-}
-.ItemType div .minus{
-	position: absolute;
-	left:0%;
-	width:10%;
-	display: inline-block;
-
-}
-.ItemType div .count{
-	position: absolute;
-	bottom: 0;
-	left:25%;
-	width:50%;
-	display: inline-block;
-	background-color: #ffffff;
-	border-radius: 5px;
+	font-size: 3vw;
 }
 
-.ItemType div .plus, .ItemType div .minus, .ItemType div .count{
-		font-size: 2vw;
-}
 
-@media only screen and (max-width:960px){
-	.ItemType{
-		float:none;
-		width:70%;
-		font-size: 7vw;
-	}
-	.ItemType div .plus, .ItemType div .minus, .ItemType div .count{
-			font-size: 3vw;
-	}
+#addcart{
+	position: fixed;
+	right:2%;
+	bottom:2%;
 }
-.addtocart{
-	position: absolute;
-	bottom: 10;
-	right: 0;
-	width: 10%;
-	height: 10%;
-	border-radius: 50%;
+#addcart {
+  	color: #31302B;
+    background: transparent;
+    font-family: 'OpenSansBold', sans-serif;
+    border: 3px solid #31302B;
+    font-size: 2vw;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #31302B;
+		transition: all ease 0.8s;
+}
+#addcart:hover {
+    box-shadow: inset 300px 0 0 0 #e0e0e0;
+    color: #fff;
 }
