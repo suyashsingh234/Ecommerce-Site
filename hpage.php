@@ -29,7 +29,6 @@
 				<div id="hd" class="ItemType">
 					<p>Home Decor</p>
 				</div>
-		</div>
 			<script src="hpage.js"></script>
 	</body>
 </html>

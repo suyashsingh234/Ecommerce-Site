@@ -1,5 +1,6 @@
 <html>
 <link href="nav.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 	<?php
 	session_start();
@@ -7,16 +8,17 @@
 	{
 		?>
 		<div id="nav">
-			<div id="title">
+			<div class="btn draw-border" id="title">
 				Jiit Shop
 			</div>
-			<div id="search">
-				<input id="inpsearch" placeholder="search">
-			</div>
-			<div id="cart">
+			<form id="search" action="search.php" method="POST">
+				<input name="search" id="inpsearch" placeholder="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+			<div class="btn draw-border" id="cart">
 				My cart
 			</div>
-			<div id="logout">
+			<div class="btn draw-border" id="logout">
 			Log out
 			</div>
 		</div>
@@ -26,13 +28,14 @@
 	else {
 	?>
 	<div id="nav">
-		<div id="title">
+		<div class="btn draw-border" id="title">
 			Jiit Shop
 		</div>
-		<div id="search">
-			<input id="inpsearch" placeholder="search">
-		</div>
-		<div id="login">
+		<form id="search" action="search.php" method="POST">
+			<input name="search" id="inpsearch" placeholder="search">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+		<div class="btn draw-border" id="login">
 			Log in
 		</div>
 	</div>
