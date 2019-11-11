@@ -3,7 +3,6 @@
 	<head>
 		<title>JiitShop.In</title>
 		<link href="hpage.css" rel="stylesheet"/>
-
 	</head>
 	<body>
 			<?php
