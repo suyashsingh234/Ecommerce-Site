@@ -11,10 +11,10 @@
 			?>
 			<div class="slider">
 				<div>
-					<img src="images/mens.jpg"/>
-					<img src="images/kids.jpg"/>
-					<img src="images/womens.jpg"/>
-					<img src="images/homedecor.jpg"/>
+					<img class="slide1" src="images/mens.jpg"/>
+					<img class="slide2" src="images/kids.jpg"/>
+					<img class="slide3" src="images/womens.jpg"/>
+					<img class="slide4" src="images/homedecor.jpg"/>
 				</div>
 			</div>
 			<div class="items">
