@@ -27,7 +27,7 @@
 						</div>
 						<div class='bottom'>
 							<button class='minus'>-</button>
-							<div class='count'>0</div>
+							<div id=".$row['id']." class='count'>0</div>
 							<button class='plus'>+</button>
 						</div>
 					</div>
